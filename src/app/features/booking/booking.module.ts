@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BookingSelectorComponent } from './booking-selector/booking-selector.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './booking.routes';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -12,6 +13,7 @@ import { routes } from './booking.routes';
   ],
   imports: [
     CommonModule,
+    SharedModule,
     RouterModule.forChild(routes)
   ]
 })
